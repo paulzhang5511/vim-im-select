@@ -11,7 +11,7 @@ let g:im_select_switch_im_cmd = 'im-select.exe {im}'
 augroup im_select
   autocmd!
   autocmd InsertLeave * :call <SID>CloseIME()
-  autocmd InsertEnter * :call <SID>RestoreIME()
+  autocmd InsertEnter * :call <SID>CloseIME()
 augroup end
 
 let g:insert_ime_mode_ = g:im_select_default_im
